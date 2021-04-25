@@ -19,8 +19,12 @@ header, footer {
     text-align: center;
 }
 
-footer a:visited {
+footer a:link {
     color: azure;
+}
+
+footer a:visited {
+    color: #e4dcc9;
 }
 
 header img {
