@@ -5,14 +5,14 @@ body {
 
 header, main, footer {
     max-width: 960px;
-    margin: 0 auto;
+    margin: 1em auto;
 }
 
 header, footer {
     border-radius: .5em;
     padding: 1rem;
     background-color: #284b63;
-    color:azure;
+    color: white;
     text-align: center;
 }
 
@@ -20,66 +20,38 @@ h2 {
     font-family: 'Dancing Script', cursive;
 }
 
-main {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-#alignment {
+main div {
     padding: .5em;
-    grid-column: 1;
-    background-color: #d9d9d9;
-    border: 2px solid black;
-    border-radius: .5em;
-    margin-right: .5em;
-}
-#alignment h2{
-    padding: .3em;
-    color: azure;
-    background-color: #284b63;
-}
-#alignment img {
-    width: 300px;
-    margin: 0 auto;
-}
-#contrast {
-    padding: .5em;
-    grid-column: 2;
     background-color: #d9d9d9;
     border: 2px solid black;
     border-radius: .5em;
 }
-#contrast h2{
+main h2 {
     padding: .3em;
-    color: azure;
+    color: white;
     background-color: #284b63;
 }
 
-#contrast img {
-    width: 300px;
-    margin: 0 auto;
-}
-#whitespace_cleandesign {
-    padding: .5em;
-    grid-column: 3;
-    background-color: #d9d9d9;
-    border: 2px solid black;
-    border-radius: .5em;
-    margin-left: .5em;
+main a:link {
+    color: black;
 }
 
-#whitespace_cleandesign h2{
-    padding: .3em;
-    color: azure;
-    background-color: #284b63;
+main a:visited {
+    color:#284b63;  
 }
 
-#whitespace_cleandesign img {
-    width: 300px;
-    margin: 0 auto;
+main a:hover{
+    color:teal;
 }
+
+main img {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 1em;
+}
+
 footer a:link {
-    color: azure;
+    color: white;
 }
 
 footer a:visited {
