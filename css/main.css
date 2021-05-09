@@ -11,16 +11,21 @@ header, main, footer {
 main {
     padding-bottom: 1em;
 }
+
 header, footer {
     border-radius: .5em;
     padding: 1rem;
     background-color: #284b63;
-    color:azure;
+    color:white;
     text-align: center;
 }
 
 main ul a:link {
-    color: #277da1;
+    color: #284b63;
+}
+
+main ul a:hover {
+    color: teal;
 }
 
 h1 {
@@ -29,6 +34,10 @@ h1 {
 
 footer a:link {
     color: azure;
+}
+
+footer a:hover {
+    color: teal;
 }
 
 footer a:visited {

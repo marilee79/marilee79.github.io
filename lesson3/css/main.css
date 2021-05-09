@@ -1,0 +1,56 @@
+header, nav, main, footer {
+    max-width: 960px;
+    margin: 1em auto;
+}
+header, footer {
+    color: white;
+    background-color: #75CBE8;
+    text-align: center;
+    padding: 1em;
+}
+body {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+h1 {
+    font-family: 'Cormorant SC', serif;
+    font-size: 40px;
+}
+nav {
+    background-color: #26A6D1;
+    text-align: center; 
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem;
+    text-align: center;
+    font-size: 1rem;
+
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav a:link {
+    color: white;
+}
+
+nav a:visited {
+    color:#FFEC5F; 
+}
+
+nav a:hover {
+    color:#D51920; 
+}
+
+main img {
+    width: 400px;
+    margin: 0 auto;
+    padding-top: 1em;
+}
+
