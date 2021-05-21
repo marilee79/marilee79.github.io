@@ -1,0 +1,85 @@
+header, nav, main, footer {
+    max-width: 960px;
+    margin: 1em auto;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+}
+h1 {
+    font-family: "Cormorant";
+    color: hsl(358, 79%, 47%);
+}
+.motto {
+    font-weight: 100;
+    align-items: center;
+}
+header {
+    background-color: white;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+header img {
+    width: 80px;
+    height: auto;
+}
+nav {
+    margin: 0 auto;
+    padding: 3px;
+    max-width: 960px;
+    background-color: hsl(195, 69%, 48%);
+    text-align: center;
+}
+
+.navigation {
+    list-style-type: none;
+    padding: 0;
+}
+.navigation li:first-child {
+    display: block;
+}
+.navigation li {
+    display: none;
+}
+.navigation a {
+    display: block;
+    padding: .50rem;
+    text-decoration: none;
+    color: white;
+}
+
+.navigation a:link {
+    color: white;
+}
+
+.navigation a:visited {
+    color:hsl(53, 100%, 69%);
+}
+
+.navigation a:hover {
+    color: hsl(358, 79%, 47%);
+}
+
+.responsive li {
+    display: block;
+}
+
+.contentbox {
+    background-color: hsl(195, 100%, 88%);
+    border: .5px solid black;
+    padding: 5px;
+    margin-top: 10px;
+}
+p {
+    background-color:hsl(0, 0%, 90%);
+    padding: 5px;
+    margin: 0;
+}
+footer {
+    color: white;
+    background-color: hsl(195, 69%, 48%);
+    padding: 7px;
+    text-align: center;
+}
