@@ -7,16 +7,24 @@ body{
 }
 aside {
     display: none;
+    color:hsl(358, 79%, 47%);
+    font: bold;
+    font-weight: 700;
+    background-color: hsl(53, 100%, 69%);
+    padding: 10px;
 }
 
 h1 {
     font-family: "Cormorant";
     color: hsl(358, 79%, 47%);
+    text-shadow: 3px 3px 5px hsl(358, 50%, 69%);
+    margin-bottom: -10px;
 }
 
 .motto {
     font-weight: 100;
     align-items: center;
+    margin-top: 5px;
 }
 
 header {
@@ -81,12 +89,9 @@ h2 {
     text-align: center;
 }
 
-.weathersummary {
-    width: 960px;
-    height: 300px;
-    position: relative;
-   
+.weathersummary {  
 }
+
 .weathersummary img {
     margin: 10px auto;
     width: 100%;
@@ -94,7 +99,6 @@ h2 {
 }
 .weatherdetails {
     margin: 0 auto;
-    position: absolute;
     top: 60px;
     left: 40px;
     display: grid;
@@ -102,7 +106,7 @@ h2 {
     background-color:hsl(0, 0%, 90%);
     opacity: .9;
     border: 1px solid black;
-    padding: .3em;
+    padding: .5em;
     box-shadow: 0 0 30px hsl(0, 0%, 90%);
 }
 .weatherdetails h3 {
@@ -127,7 +131,7 @@ h3 {
 }
 
 .forecast {
-    max-width: 960px;
+    
     display: flex;
     flex-flow: row wrap;
 }
@@ -145,7 +149,6 @@ h3 {
 .daysofweek img{
     flex: 1 1 auto;
     padding: .25rem;
-    
 }
 
 .temp {
@@ -166,6 +169,7 @@ article {
 article img {
     float: right;
     width: 300px;
+    margin: 1em;
     border: 1px solid black;
     box-shadow: 0 0 30px black;
 }

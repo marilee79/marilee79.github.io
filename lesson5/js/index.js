@@ -15,7 +15,4 @@ const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 );
 datefield.textContent = fulldate;
 
-//if (thedate.getDay() == 7) {// 
-datefield == 5 ? document.querySelector('aside').style.display = 'block'
-
-
+if (now.getDay() == 0) { document.querySelector('aside').style.display = 'block';}

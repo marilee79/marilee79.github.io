@@ -20,7 +20,16 @@
     .headings {
         padding: 0 5px;
     }
-   
-    
+   .weathersummary {
+        width: 960px;
+        height: 300px;
+        position: relative;
+   }
+   .weatherdetails {
+       position: absolute;
+   }
+   .forecast {
+        max-width: 960px;
+   }
 
 }
