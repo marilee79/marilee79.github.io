@@ -32,7 +32,7 @@
    .forecast {
        width: 80%;
        margin-left: 96px;
-       margin-bottom: 10px;
+       margin-bottom: 30px;
        max-width: 960px;
        height: 100px;
        display: flex;
@@ -43,7 +43,7 @@
 
    .daysofweek {
        flex: 1 1 auto;
-       font-weight: 550;
+       font-weight: 600;
        font-size: 1rem;
        color: black;
        background-color:white;
@@ -63,17 +63,35 @@
        background-color:hsl(195, 69%, 48%);
        text-align: center;
    }
-
    .temp {
        display: block;
        padding: 5px;
        background-color: white;
        text-align: center;
-      /* border: 1px solid black;*/
+    }
+    article {
+        margin-bottom: 20px;
     }
     article img {
        float: right;
     }
-
-
+    .clearfix::after {
+        content:"";
+        clear: both;
+        display:table;
+    }
+    .contactus {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .contactus img  {        
+        grid-template-columns: 1fr;
+        justify-self: center;
+        margin: 20px;
+    }
+    .contact {
+        grid-template-columns: 1fr;
+        align-self: center;
+        margin-top: 20px;
+    }  
 }
