@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="css/medium.css"/>
         <link rel="stylesheet" href="css/large.css"/>
         <script defer src="js/index.js"></script>
+        <script defer src="js/windchill.js"></script>
 </head>
 <body>
     <aside>🥞 Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion</aside>
@@ -43,7 +44,11 @@
     <main>
         <h2>Preston Idaho</h2>
         <div class="weathersummary">
-            <img src="images/river-4143487_1920.jpg" alt="image of mountains and river running through it">
+            <picture>
+                <source srcset="images/hero-large.jpg" media="(min-width: 900px)">
+                <source srcset="images/hero-medium.jpg" media="(min-width: 600px)">
+                <img src="images/hero-small.jpg" alt="small hero preston image optimization">
+            </picture>
                 
                       
             <section class="weatherdetails">   
@@ -51,13 +56,13 @@
                 <p class="label">Currently:</p>
                 <p class="value">Sunny</p>
                 <p class="label">Temperature:</p>
-                <p class="value">78&deg; F</p>
-                <p class="label">Humidity:</p>
-                <p class="value">50%</p>
+                <p class="value"><span id="temp">40</span>&deg; F</p>
+                <p class="label">Wind Chill:</p>
+                <p class="value"><span id="windchill"></span></p>
                 <p class="label">Precipitation:</p>
                 <p class="value">10%</p>
                 <p class="label">Wind Speed:</p>
-                <p class="value">18 mph</p>
+                <p class="value"><span id="wind">15</span>mph</p>
             </section> 
         </div>
 
