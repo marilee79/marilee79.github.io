@@ -19,15 +19,16 @@ h1 {
     font-size: 20px;
     color: hsl(358, 79%, 47%);
     text-shadow: 3px 3px 5px hsl(358, 50%, 69%);
-    margin-bottom: 5 px;
+    margin-top: 0;
+    margin-bottom: 1px;
     margin-left: 10px;
 }
 
 .motto {
-    font-size: 10px;
+    font-size: 12px;
+    font-weight: 600;
     align-items: center;
-    margin-top: 5px;
-    margin-left: 35px;
+    margin-left: 20px;
 }
 
 header {
@@ -103,7 +104,7 @@ h2 {
     top: 60px;
     left: 60px;
     display: grid;
-    grid-template-columns: 1fr 50%;
+    grid-template-columns: 1fr 1fr;
     background-color:hsl(0, 0%, 90%);
     opacity: .9;
     border: 1px solid black;
@@ -123,7 +124,6 @@ h2 {
 }
 .value {
     grid-column: 2;
-    text-align: left;
     margin: 3px;
 }
 h3 {
@@ -149,7 +149,6 @@ article {
 
 article img {
     width: 100%;
-    margin: 0 1em;
     border: 1px solid black;
     box-shadow: 0 0 30px black;
 }
