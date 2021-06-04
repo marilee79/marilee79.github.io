@@ -94,7 +94,9 @@
         margin-bottom: 20px;
     }
     article img {
-       float: right;
+        max-width: 400px;
+        float: right;
+        margin-left: 12px;
     }
     .clearfix::after {
         content:"";
