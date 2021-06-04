@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progressive Loading (Images)</title>
+        <meta name="description"
+            content="Our document loading goal is to be ready for in a few seconds upon a users request. This exercise alleviates load times by using lazy loading of images."/>
+        <link rel="shortcut icon" href="favicon.ico">   
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/lazyload.css"/>
+        
+        
+</head>
+<body>
+    <main>
+        <h1>Progressing Loading (Images)</h1>
+        <picture>
+            <img 
+                src="https://via.placeholder.com/300x400"
+                data-src="http://placeimg.com/300/400/animals" 
+                alt="animals placeholder"
+            />
+        </picture>
+        <picture>
+            <img 
+                src="https://via.placeholder.com/300x400"
+                data-src="http://placeimg.com/300/400/arch" 
+                alt="architecture placeholder"
+            />
+        </picture>
+        <picture>
+            <img 
+                src="https://via.placeholder.com/300x400"
+                data-src="http://placeimg.com/300/400/nature" 
+                alt="nature placeholder"
+            />
+        </picture>
+        <picture>
+            <img 
+                src="https://via.placeholder.com/300x400"
+                data-src="http://placeimg.com/300/400/people" 
+                alt="people placeholder"
+            />
+        </picture>
+        <picture>
+            <img 
+                src="https://via.placeholder.com/300x400"
+                data-src="http://placeimg.com/300/400/tech" 
+                alt="technology placeholder"
+            />
+        </picture>
+        <picture>
+            <img 
+                src="https://via.placeholder.com/300x400"
+                data-src="http://placeimg.com/300/400/arch" 
+                alt="architecture placeholder"
+            />
+        </picture>
+    </main>
+    <script src="js/lazyload.js"></script>
+</body>
