@@ -164,6 +164,21 @@ article img {
 .contact img {
     display: none;
 }
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px); 
+}
+.gallery img { 
+    width: 100%;
+} 
+figure {
+    box-shadow: 0 0 30px black;
+    margin: 12px;
+}
+figcaption {
+    font-size: 10px;
+    padding: 5px; 
+}
 footer {
     color:hsl(0, 0%, 100%);
     font-weight: 500;

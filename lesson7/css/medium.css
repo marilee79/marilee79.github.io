@@ -59,7 +59,6 @@
        display: flex;
        flex-flow: row wrap; 
        border-right: 1px solid black; 
-
    }
 
    .daysofweek {
@@ -133,5 +132,10 @@
         clear: both;
         display:table;
     }
-    
+    .gallery {
+        max-width: 1048px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 400px); 
+    }
 }
