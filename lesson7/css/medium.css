@@ -116,26 +116,32 @@
         width: 250px;
         height: auto;
     }
+    
     .contact {
         grid-column: 2;
         align-self: center;
         margin-top: 20px;
     }  
+    
     .contact img {
         float: left;
         display: grid;        
         width: 37px;
         height: 37px;
     }
+    
     .clearfix::after {
         content:"";
         clear: both;
         display:table;
     }
+
     .gallery {
-        max-width: 1048px;
+        max-width: 1280px;
         margin: 0 auto;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, 400px); 
+    }
+    
+    figure {
+        margin: 12px;
     }
 }

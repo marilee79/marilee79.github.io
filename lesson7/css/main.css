@@ -26,7 +26,7 @@ h1 {
 
 .motto {
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 700;
     align-items: center;
     margin-left: 20px;
 }
@@ -164,19 +164,28 @@ article img {
 .contact img {
     display: none;
 }
+.last-visit {
+    color: hsl(195, 69%, 40%);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+}
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 400px); 
+    grid-template-columns: repeat(auto-fill, 375px); 
+    justify-content: center;
 }
 .gallery img { 
     width: 100%;
 } 
 figure {
-    box-shadow: 0 0 30px black;
-    margin: 12px;
+    box-shadow: 0 0 30px black;   
 }
+
 figcaption {
     font-size: 10px;
+    font-weight: bold;
     padding: 5px; 
 }
 footer {

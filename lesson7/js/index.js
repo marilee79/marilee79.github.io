@@ -16,3 +16,4 @@ const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 datefield.textContent = fulldate;
 
 if (now.getDay() == 5) { document.querySelector('aside').style.display = 'block';}
+
