@@ -189,6 +189,63 @@ figcaption {
     padding: 5px; 
 }
 
+/* form styling */
+form {
+    justify-self: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 1rem auto;
+}
+form fieldset {
+    margin: 2rem 0;
+    border: 2px solid hsl(195, 69%, 40%);
+    border-radius: 5px;
+    padding: 1rem 2%;
+    background-color: hsl(0, 0%, 90%);
+}
+form legend {
+    color: hsl(195, 69%, 40%);
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    font-weight: 600;
+}
+form label {
+    display: block;
+    padding-top: 1rem;
+    color: hsl(195, 69%, 40%);
+    font-size: 1rem;
+}
+form label input, form label select, textarea {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px hsl(195, 69%, 40%);
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+}
+
+.submit {
+    justify-self: center;
+    
+    color:hsl(0, 0%, 100%);
+    font-weight: 500;
+    background-color: hsl(195, 69%, 40%);
+    padding: 10px;
+    text-align: center;
+    border: solid 1px hsl(195, 69%, 40%);
+    border-radius: 4px;
+    width: 100%;
+    max-width: 20rem;
+}
+
+input:invalid {
+    border: red solid 2px;
+}
+.thankyou {
+    text-align: center;
+}
 footer {
     color:hsl(0, 0%, 100%);
     font-weight: 500;
@@ -196,20 +253,4 @@ footer {
     padding: 15px;
     text-align: center;
 }
-/* form styling */
-form fieldset {
-    margin: 2rem 0;
-    border: 1px solid hsl(195, 69%, 40%);
-    border-radius: 5px;
-    padding: 1rem 2%;
-}
-form legend {
-    color: hsl(195, 69%, 40%);
-    margin: 0 1rem;
-    padding: 0 .5rem;
-}
-form label
 
-input:invalid {
-    border: red solid 3px;
-}
