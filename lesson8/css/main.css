@@ -12,6 +12,7 @@ aside {
     font-weight: 700;
     background-color: hsl(53, 100%, 69%);
     padding: 10px;
+    text-align:center;
 }
 
 h1 {
@@ -164,6 +165,8 @@ article img {
 .contact img {
     display: none;
 }
+
+/*styling for Gallery page*/
 .last-visit {
     color: hsl(195, 69%, 40%);
     font-size: 20px;
@@ -190,10 +193,14 @@ figcaption {
 }
 
 /* form styling */
+h1.stormcenter {
+    text-align: center;
+    padding: 10px;
+}
 form {
     justify-self: center;
     width: 100%;
-    max-width: 1000px;
+    max-width: 450px;
     margin: 1rem auto;
 }
 form fieldset {
@@ -207,13 +214,14 @@ form legend {
     color: hsl(195, 69%, 40%);
     margin: 0 1rem;
     padding: 0 .5rem;
+    font-size: 20px;
     font-weight: 600;
 }
 form label {
     display: block;
     padding-top: 1rem;
     color: hsl(195, 69%, 40%);
-    font-size: 1rem;
+    font-size: 17px;
 }
 form label input, form label select, textarea {
     display: block;
@@ -225,10 +233,13 @@ form label input, form label select, textarea {
     width: 100%;
     max-width: 20rem;
 }
-
+form label input[type="radio"] {
+    display: inline-block;
+    width: 5%;
+  
+}
 .submit {
-    justify-self: center;
-    
+    text-align: center;
     color:hsl(0, 0%, 100%);
     font-weight: 500;
     background-color: hsl(195, 69%, 40%);
@@ -238,8 +249,11 @@ form label input, form label select, textarea {
     border-radius: 4px;
     width: 100%;
     max-width: 20rem;
+    margin-left: 20px;
 }
-
+.submit:hover {
+    background-color: hsl(358, 79%, 47%);
+}
 input:invalid {
     border: red solid 2px;
 }
