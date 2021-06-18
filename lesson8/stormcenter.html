@@ -41,21 +41,21 @@
             <li><a href="#">Gallery</a></li>
         </ul>
     </nav>
-    <h1 class="stormcenter">Storm Center</h1>
+    <h2 class="stormcenter">Storm Center</h2>
     <h3>Report a storm event in your area:</h3>
     <form method="get" action="thanks.html">
         <fieldset>
             <legend>Personal Information</legend>
-                <label>Full Name* <input type="text" name="name" placeholder="First & Last name required" required pattern="[a-zA-Z ]{5, }"></label>
+                <label>Full Name* <input type="text" name="name" placeholder="First & Last name required" required pattern="[a-zA-Z ]{5,}"></label>
                 <label>Email <input type="email" name="email" placeholder="jsmith@byui.edu"></label>
-                <label>Phone Number* <input type="tel" name="phone" required></label>
+                <label>Phone Number* <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></label>
                 <label>Zip Code* <input type="number" name="zip" required></label>
         </fieldset> 
         <fieldset>
             <legend>Storm</legend>
                 <label>Storm Date <input type="date" name="stormdate"></label>
                 
-                <label>Storm Type <input list="stormtype" name="stormtype" placeholder="Select type of storm"/>
+                <label>Storm Type <input list="stormtype" name="stormtype" placeholder="Select type of storm &#9662;"/>
                     <datalist id="stormtype">
                         <option value="Flashflood"></option>
                         <option value="Hail"></option>
@@ -65,27 +65,25 @@
                     </datalist>
                 </label>
                 
-                <label>Storm Severity (1-10, 10 most severe)
-                    <input  type="range" 
-                            name="severity" 
-                            value="5" 
-                            min="1" 
-                            max="10" 
-                            step="1" 
-                            list="tickmarks">
+                <label class="flexly" for="rating">Storm Severity (1-10, 10 most severe) &nbsp;&nbsp;&nbsp;
+                    <input  type="range" id="rating" value="5" min="1" max="10" 
+                            step="1" list="tickmarks"
+                            oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+			    <span id="ratingvalue">5</span>
+                </label>
                     <datalist id="tickmarks">
-                        <option value="1" label="1"></option>
+                        <option value="1"></option>
                         <option value="2"></option>
                         <option value="3"></option>
                         <option value="4"></option>
-                        <option value="5" label="5"></option>
+                        <option value="5"></option>
                         <option value="6"></option>
                         <option value="7"></option>
                         <option value="8"></option>
                         <option value="9"></option>
-                        <option value="10" label="10"></option>
+                        <option value="10"></option>
                     </datalist>
-                </label>
+                
                 
                 <label>Storm Region 
                     <select name="stormregion">

@@ -193,7 +193,7 @@ figcaption {
 }
 
 /* form styling */
-h2 {
+h1.stormcenter {
     text-align: center;
     padding: 10px;
 }
@@ -203,7 +203,6 @@ form {
     max-width: 450px;
     margin: 1rem auto;
 }
-
 form fieldset {
     margin: 2rem 0;
     border: 2px solid hsl(195, 69%, 40%);
@@ -220,7 +219,7 @@ form legend {
 }
 form label {
     display: block;
-    padding: 1rem; 
+    padding-top: 1rem;
     color: hsl(195, 69%, 40%);
     font-size: 17px;
 }
@@ -229,13 +228,11 @@ form label input, form label select, textarea {
     font-size: 1rem;
     border: solid 1px hsl(195, 69%, 40%);
     border-radius: 4px;
-    padding: 1rem;
+    padding: .75rem;
     color: #555;
     width: 100%;
     max-width: 20rem;
-    margin-top: .5rem;
 }
-
 form label input[type="radio"] {
     display: inline-block;
     width: 5%;
