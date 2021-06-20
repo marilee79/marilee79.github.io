@@ -1,9 +1,17 @@
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 50em) {
     .gallery img:hover { 
         box-shadow: 0 0 30px black;
     }
     figcaption {
         font-size: 15px;
     }
-    
+    /* styling for home page */
+    .towns {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .towns img {
+        width: 100%;
+    }
 }

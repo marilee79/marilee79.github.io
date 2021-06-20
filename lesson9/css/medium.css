@@ -144,4 +144,20 @@
     figure {
         margin: 12px;
     }
+
+    /* styling for home page */
+    
+    .towns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+      
+    .towns:nth-child(odd) img { 
+          grid-column: 2;
+    }
+      
+    .towns:nth-child(odd) p {
+          grid-column: 1;
+          grid-row: 1;
+    }
 }

@@ -260,6 +260,26 @@ input:invalid {
 .thankyou {
     text-align: center;
 }
+/*styling for home page*/
+.home-hero img {
+    margin: 10px auto;
+    width: 100%;
+    height: 300px;
+}
+
+main section {
+    margin: 5px;  
+    border: 1px solid #ccc;
+    background-color: #eee;
+    text-align: center;
+}
+.towns p:first-of-type {
+    font-family: "Cormorant";
+    color: hsl(358, 79%, 47%);
+    font-style: italic;
+    font-weight: 600;
+}
+
 footer {
     color:hsl(0, 0%, 100%);
     font-weight: 500;
