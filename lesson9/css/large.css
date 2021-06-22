@@ -2,16 +2,29 @@
     .gallery img:hover { 
         box-shadow: 0 0 30px black;
     }
+    header img {
+        width: 128px;
+        height: auto;
+    }
     figcaption {
         font-size: 15px;
     }
+
     /* styling for home page */
+    main section {
+        display: block;
+        margin: 0;
+    }
     .towns {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 5px;
     }
-    .towns img {
+    main section img {
         width: 100%;
+        height: auto;
+        padding: 0;
+
     }
 }
