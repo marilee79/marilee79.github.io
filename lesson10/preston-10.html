@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="css/large.css"/>
         <script defer src="js/index.js"></script>
         <script defer src="js/windchill.js"></script>
+        <script defer src="js/forecast.js"></script>
 </head>
 <body>
     <aside>🥞🥞 Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion. 🥞🥞</aside>
@@ -54,13 +55,13 @@
             <section class="weatherdetails">   
                 <h3>Weather Summary</h3> 
                 <p class="label">Currently:</p>
-                <p class="value">Sunny</p>
-                <p class="label">Temperature:</p>
+                <p class="value"><span id="current"></span>&deg; F</p>
+                <p class="label">High:</p>
                 <p class="value"><span id="temp">40</span>&deg; F</p>
                 <p class="label">Wind Chill:</p>
                 <p class="value"><span id="windchill"></span></p>
-                <p class="label">Precipitation:</p>
-                <p class="value">10%</p>
+                <p class="label">Humidity:</p>
+                <p class="value"><span id="humidity">10%</span> %</p>
                 <p class="label">Wind Speed:</p>
                 <p class="value"><span id="wind">3</span> mph</p>
             </section> 
@@ -69,29 +70,29 @@
         <h3 class="fctitle">5 Day Forecast</h3>
         <div class="forecast">
             <div class="daysofweek">
-                <span class="weekday">Mon</span>
-                <img src="images/sun.png" alt="sunny">
-                <span class="temp">72&deg; F</span>
+                <span class="weekday1"></span>
+                <img src="" alt="" id="icon">
+                <span class="forecast1">&deg; F</span>
             </div>
             <div class="daysofweek">
-                <span class="weekday">Tues</span>
-                <img src="images/sun.png" alt="sunny">
-                <span class="temp">75&deg; F</span>
+                <span class="weekday2"></span>
+                <img src="" alt="" id="icon">
+                <span class="forecast2">&deg; F</span>
             </div>
             <div class="daysofweek">
-                <span class="weekday">Wed</span>
-                <img src="images/sun.png" alt="sunny">
-                <span class="temp">68&deg; F</span>
+                <span class="weekday3"></span>
+                <img src="" alt="" id="icon">
+                <span class="forecast3">&deg; F</span>
             </div>
             <div class="daysofweek">
-                <span class="weekday">Thurs</span>
-                <img src="images/sun.png" alt="sunny">
-                <span class="temp">73&deg; F</span>
+                <span class="weekday4"></span>
+                <img src="" alt="" id="icon">
+                <span class="forecast4">&deg; F</span>
             </div>
             <div class="daysofweek">
-                <span class="weekday">Fri</span>
-                <img src="images/sun.png" alt="sunny">
-                <span class="temp">80&deg; F</span>
+                <span class="weekday5"></span>
+                <img src="" alt="" id="icon">
+                <span class="forecast5"></span>&deg; F
             </div>
         </div>   
         
