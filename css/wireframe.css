@@ -1,0 +1,16 @@
+h1 {
+    align-self: center;
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+h2 {
+    grid-row: 1;
+}
+
+body img {
+    width: 100%;
+    grid-row: 2;
+}
