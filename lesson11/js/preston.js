@@ -1,3 +1,4 @@
+// Preston
 if (now.getDay() == 5) { 
 	document.querySelector('aside').style.display = 'block';}
 
@@ -51,6 +52,7 @@ if (now.getDay() == 5) {
                     
                     // console.log(d);
                     let card = document.createElement('div');
+                    card.setAttribute("class", "daycard");
                     
 
                     let head = document.createElement('h3');
