@@ -80,7 +80,8 @@ nav {
 }
 
 .navigation a:hover {
-    color: hsl(358, 79%, 47%);
+    color:hsl(195, 69%, 24%);
+    background-color: white;
 }
 
 .active {
@@ -289,4 +290,6 @@ footer {
     padding: 15px;
     text-align: center;
 }
-
+footer a {
+    color:hsl(0, 0%, 100%);
+}

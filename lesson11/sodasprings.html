@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Southeast Idaho's Trifecta | Soda Springs</title>
+        <meta name="description"
+            content="Southeast Idaho's Trifecta. Want to know what the weather is for Preston, Soda Springs and Fish Haven? Need to know what events are happening this weekend? Need to know where to stay when vacationing in southeast Idaho?"/>
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="css/main.css"/>
+        <link rel="stylesheet" href="css/medium.css"/>
+        <link rel="stylesheet" href="css/large.css"/>
+        <script defer src="js/index.js"></script>
+        <script defer src="js/sodasprings.js"></script>
+        <script defer src="js/towndata.js"></script>
+
+</head>
+<body>
+    <header>
+        <picture>
+            <img src="images/weathersitelogo.png" alt="Weather site logo">
+        </picture>
+        <section class="headings">
+            <h1>Southeast Idaho's Trifecta</h1>
+            <div class="motto">
+                Preston | Soda Springs | Fish Haven
+            </div>
+        </section>
+    </header>
+    <nav>
+        <ul class="navigation">
+            
+            <li><a class="ham" href="#">&#9776;Menu</a></li>
+            <li><a href="./">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a class="active" href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Soda Springs Idaho</h2>
+        <div class="weathersummary">
+            <picture class="home-hero">
+                <source srcset="images/river-large-hero.jpg" media="(min-width: 900px)">
+                <source srcset="images/river-med-hero.jpg" media="(min-width: 600px)">
+                <img src="images/river-small-hero.jpg" alt="Image of mountains surrounding a river.">
+            </picture>
+              
+            <section class="weatherdetails">   
+                <h3>Weather Summary</h3> 
+                <p class="label">Currently:</p>
+                <p class="value"><span id="current"></span>&deg; F</p>
+                <p class="label">High:</p>
+                <p class="value"><span id="temp">40</span>&deg; F</p>
+                <p class="label">Wind Chill:</p>
+                <p class="value"><span id="windchill"></span></p>
+                <p class="label">Humidity:</p>
+                <p class="value"><span id="humidity">10%</span> %</p>
+                <p class="label">Wind Speed:</p>
+                <p class="value"><span id="wind">3</span> mph</p>
+            </section> 
+        </div>
+
+        <h3 class="fctitle">5 Day Forecast</h3>
+        <div class="forecast">
+            
+        </div>   
+        
+        <article class="clearfix">
+            <h3>Famous Preston Rodeo</h3>
+            <img src="images/rodeo-resized.jpg" alt="image of cowboy in rodeo">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi enim maiores doloremque eaque, explicabo quae saepe et, quia illo delectus facilis. Quas minima laudantium aspernatur perspiciatis distinctio autem doloribus magni? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur repellendus nihil pariatur magni minima ratione tempora, dolorum omnis temporibus, ad rem recusandae cum, vitae perferendis facere hic ullam consequuntur alias? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum nulla mollitia placeat nemo, deserunt eos quasi vero, optio impedit maxime sit dolores magnam assumenda quidem ad delectus sed ab doloribus?</p>
+        </article>
+        <h3 class="cutitle">Contact Us</h3>
+        <div class="contactus">  
+            <img src="images/southern-idaho-map.jpg" alt="map of south eastern idaho">
+            <div class="contact">
+                <p>📧 Email: seidahotrifecta@gmail.com</p> 
+                <p>📞 Call: 208-874-3328</p>
+                <img src="images/facebook-icon.png" alt="facebook logo">
+                <img src="images/instagram-icon.png" alt="instagram logo">
+                <img src="images/youtube-icon.png" alt="youtube logo">
+            </div>
+        </div>
+    </main>
+    <footer>
+        
+        &copy; <span id="theyear"></span> | <a href="attributions.html">Attributions</a> | Marilee Belnap<br>
+        <date></date>
+    </footer>
+    
+</body>
+</html>
