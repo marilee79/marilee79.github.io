@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Southeast Idaho's Trifecta | Gallery</title>
+        <meta name="description"
+            content="Southeast Idaho's Trifecta. Gallery of weather and southeast Idaho images."/>
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css"/>
+        <link rel="stylesheet" href="css/medium.css"/>
+        <link rel="stylesheet" href="css/large.css"/>
+        <script defer src="js/index.js"></script>
+        <script defer src="js/stormcenter.js"></script>
+        
+</head>
+<body>
+    <header>
+        <picture>
+            <img src="images/weathersitelogo.png" alt="Weather site logo">
+        </picture>
+        <section class="headings">
+            <h1>Southeast Idaho's Trifecta</h1>
+            <div class="motto">
+                Preston | Soda Springs | Fish Haven
+            </div>
+        </section>
+    </header>
+    <nav>
+        <ul class="navigation">
+            
+            <li><a class="ham" href="#">&#9776;Menu</a></li>
+            <li><a href="./">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a class="active" href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <h2 class="stormcenter">Storm Center</h2>
+    <h3>Report a storm event in your area:</h3>
+    <form method="get" action="thanks.html">
+        <fieldset class="personal-info">
+            <legend>Personal Information</legend>
+                <label>Full Name* <input type="text" name="name" placeholder="First & Last name required" required pattern="[a-zA-Z ]{5,}"></label>
+                <label>Email <input type="email" name="email" placeholder="jsmith@byui.edu"></label>
+                <label>Phone Number* <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></label>
+                <label>Zip Code* <input type="number" name="zip" required></label>
+        </fieldset> 
+        <fieldset class="storm-info">
+            <legend>Storm Information</legend>
+                <label>Storm Date <input type="date" name="stormdate"></label>
+                
+                <label>Storm Type <input list="stormtype" name="stormtype" placeholder="Select type of storm &#9662;"/>
+                    <datalist id="stormtype">
+                        <option value="Flashflood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist>
+                </label>
+                
+                <label class="flexly" for="rating">Storm Severity (1-10, 10 most severe) &nbsp;&nbsp;&nbsp;
+                    <input  type="range" id="rating" value="5" min="1" max="10" 
+                            step="1" list="tickmarks"
+                            oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"/>
+			    <span id="ratingvalue">5</span>
+                </label>
+                    <datalist id="tickmarks">
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                        <option value="5"></option>
+                        <option value="6"></option>
+                        <option value="7"></option>
+                        <option value="8"></option>
+                        <option value="9"></option>
+                        <option value="10"></option>
+                    </datalist>
+                
+                
+                <label>Storm Region 
+                    <select name="stormregion">
+                        <option value="">Select Region</option>
+                        <option value="fishhaven">Fish Haven</option>
+                        <option value="preston">Preston</option>
+                        <option value="sodaspring">Soda Springs</option>
+                    </select>
+                </label>
+                
+                <label for="dangerlevel">Are you in danger?</label>
+                <label><input type="radio" name="dangerlevel" value="yes">Yes</label>
+                <label><input type="radio" name="dangerlevel" value="maybe">Maybe</label>
+                <label><input type="radio" name="dangerlevel" value="no">No</label>
+        </fieldset>
+        <fieldset class="additional-info">
+                <legend>Additional Information</legend>
+                <label>Comments<textarea name="comments" cols="27" rows="10" ></textarea></label>
+        </fieldset>
+        
+                <input class="submit" type="submit" value="Submit Storm Event">
+    </form>
+      
+    <footer>  
+        &copy; <span id="theyear"></span> | <a href="attributions.html">Attributions</a> | Marilee Belnap<br>
+        <date></date>
+    </footer>
+    <script src="js/stormcenter.js"></script>
+</body>
+</html>
