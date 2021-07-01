@@ -29,4 +29,10 @@ if (temp <= 50 && speed >= 3) {
 
 document.querySelector('#windchill').innerHTML = message;
     
+        const image = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
+        const desc = jsObject.weather[0].icon;
+        
+        document.querySelector(`#icon1`).setAttribute('src', image);
+        document.querySelector(`#icon1`).setAttribute('alt', desc);
+
     });
