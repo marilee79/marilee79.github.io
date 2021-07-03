@@ -1,4 +1,4 @@
-// Soda Springs
+// Soda Springs weather//
 const cityid = "5607916";
 const APPID = "fe5ce56ddb1739e03b5b9bb24fc93e2e";
 
@@ -37,21 +37,16 @@ document.querySelector('#windchill').innerHTML = message;
     fetch(forecastURL)
         .then((response) => response.json())
         .then((jsObject) => {
-            // console.log(jsObject);
-            // let day = 0;
+            
             const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
             const fiveDayForecast = jsObject.list.filter((forecast)=>forecast.dt_txt.includes('18:00:00'))
-            //console.log(fiveDayForecast);
-
-    
+        
             fiveDayForecast.forEach( item => {
                 let d = new Date(item.dt*1000);
                 
-                // console.log(d);
                 let card = document.createElement('div');
                 card.setAttribute("class", "daycard");
-                
-
+            
                 let head = document.createElement('h3');
                 head.textContent = weekdays[d.getDay()];
                 head.setAttribute("class", "daysofweek");
@@ -75,3 +70,30 @@ document.querySelector('#windchill').innerHTML = message;
             );
             
         });
+
+
+// Town events //
+const eventsURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+fetch(eventsURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    const towns = jsonObject['towns'];
+    const sodasprings = towns.filter(towns => towns.name == "Soda Springs");
+
+        let events = sodasprings[0].events;
+        let card = document.createElement('section');
+        let h3 = document.createElement('h3');
+        h3.innerHTML = sodasprings[0].name + " Events:";
+        card.append(h3);
+
+    events.forEach((event) => {
+        let townEvent = document.createElement('p');
+        townEvent.innerHTML = (event);
+        card.append(townEvent);
+        document.querySelector('div.sodasprings-events').append(card);
+    });
+        document.querySelector('div.sodasprings-events').append(card);
+});

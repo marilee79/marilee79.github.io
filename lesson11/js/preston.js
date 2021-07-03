@@ -1,4 +1,4 @@
-// Preston
+// Preston Weather//
 if (now.getDay() == 5) { 
 	document.querySelector('aside').style.display = 'block';}
 
@@ -40,21 +40,16 @@ if (now.getDay() == 5) {
         fetch(forecastURL)
             .then((response) => response.json())
             .then((jsObject) => {
-                // console.log(jsObject);
-                // let day = 0;
+                
                 const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
                 const fiveDayForecast = jsObject.list.filter((forecast)=>forecast.dt_txt.includes('18:00:00'))
-                //console.log(fiveDayForecast);
-
-        
+                
                 fiveDayForecast.forEach( item => {
                     let d = new Date(item.dt*1000);
                     
-                    // console.log(d);
                     let card = document.createElement('div');
                     card.setAttribute("class", "daycard");
                     
-
                     let head = document.createElement('h3');
                     head.textContent = weekdays[d.getDay()];
                     head.setAttribute("class", "daysofweek");
@@ -78,4 +73,29 @@ if (now.getDay() == 5) {
                 );
                 
             });
-    
+
+// Town events //
+const eventsURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+fetch(eventsURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    const towns = jsonObject['towns'];
+    const preston = towns.filter(towns => towns.name == "Preston");
+
+        let events = preston[0].events;
+        let card = document.createElement('section');
+        let h3 = document.createElement('h3');
+        h3.innerHTML = preston[0].name + " Events:";
+        card.append(h3);
+
+    events.forEach((event) => {
+        let townEvent = document.createElement('p');
+        townEvent.innerHTML = (event);
+        card.append(townEvent);
+        document.querySelector('div.preston-events').append(card);
+    });
+        document.querySelector('div.preston-events').append(card);
+});

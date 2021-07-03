@@ -15,7 +15,7 @@
         margin-left: 30px;
     }
     header img {
-        width: 80px;
+        width: 60px;
         height: auto;
     }
     .navigation {
@@ -68,27 +68,25 @@
        background-color: hsl(195, 69%, 24%);
        padding: 1em;
        text-align: center;
-       /* border-bottom: 1px solid black;   */
        margin: 0;
    }
 
    .daysofweek img{
        padding: 5px;
    }
-   /* .weekday {
-       display: block;
-       padding: 5px;
-       border-top: 1px solid black;
-       border-bottom: 2px solid black;
-       background-color:hsl(195, 69%, 40%);
-       text-align: center;
-   } */
+   
    .temp {
        display: block;
        padding: 5px;
        background-color: white;
        text-align: center;
     }
+
+    .preston-events section, .sodasprings-events section, .fishhaven-events section {
+        width: 50%;
+        margin: 1rem auto;
+    }
+
     article {
         margin-bottom: 20px;
     }
@@ -187,21 +185,25 @@
         align-self: center;
     }
     /* styling for storm center */
-    form{
+    form {
         display: grid;
-        grid-template-areas: 
-            "a b"
-            "c c";
+        grid-template-columns: 1fr 1fr; 
         gap: 1rem;
+        max-width: 55em;
+    }
+    textarea {
         max-width: 50em;
     }
     .personal-info {
-        grid-area: a;
+        grid-column: 1;
     }
     .storm-info {
-        grid-area: b;
+        grid-column: 2;
     }
     .additional-info {
-        grid-area: c;
+        grid-column: 1 / span 2;
     }
+   .submit {
+       grid-column: 1 / span 2;
+   }
 }

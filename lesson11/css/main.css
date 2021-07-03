@@ -141,6 +141,14 @@ h3 {
     max-width: 35px;
 }
 
+.preston-events section, .sodasprings-events section, .fishhaven-events section {
+    text-align: center;
+    font-size: 17px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(195, 69%, 24%);
+    padding: 10px;
+}
+
 article {
     display: block;
     max-width: 960px;
@@ -182,6 +190,8 @@ article img {
 }
 .gallery img { 
     width: 100%;
+    filter: blur(0em);
+    transition: filter 0.5s;
 } 
 figure {
     box-shadow: 0 0 30px black;   
@@ -190,7 +200,7 @@ figure {
 figcaption {
     font-size: 10px;
     font-weight: bold;
-    padding: 5px; 
+    padding: 10px; 
 }
 
 /* styling for storm center */
@@ -205,7 +215,7 @@ form {
     margin: 1rem auto;
 }
 form fieldset {
-    margin: 2rem 0;
+    margin: 1rem 0;
     border: 2px solid hsl(195, 69%, 40%);
     border-radius: 5px;
     padding: 1rem 2%;
@@ -234,23 +244,25 @@ form label input, form label select, textarea {
     width: 100%;
     max-width: 20rem;
 }
+
 form label input[type="radio"] {
     display: inline-block;
     width: 5%;
   
 }
 .submit {
+    grid-column: 1/2;
     text-align: center;
     color:hsl(0, 0%, 100%);
     font-weight: 500;
     background-color: hsl(195, 69%, 40%);
     padding: 10px;
-    text-align: center;
     border: solid 1px hsl(195, 69%, 40%);
     border-radius: 4px;
     width: 100%;
     max-width: 20rem;
     margin-left: 20px;
+    justify-self: center;
 }
 .submit:hover {
     background-color: hsl(358, 79%, 47%);
@@ -261,6 +273,10 @@ input:invalid {
 /*styling for thank you page*/
 .thankyou {
     text-align: center;
+    font-size: 40px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(195, 69%, 24%);
+    padding: 50px;
 }
 /*styling for home page*/
 .home-hero img {
@@ -287,7 +303,7 @@ footer {
     color:hsl(0, 0%, 100%);
     font-weight: 500;
     background-color: hsl(195, 69%, 40%);
-    padding: 15px;
+    padding: 17px;
     text-align: center;
 }
 footer a {

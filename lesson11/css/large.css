@@ -3,7 +3,7 @@
         box-shadow: 0 0 30px black;
     }
     header img {
-        width: 128px;
+        width: 80px;
         height: auto;
     }
     figcaption {
@@ -25,6 +25,5 @@
         width: 100%;
         height: auto;
         padding: 0;
-
     }
 }

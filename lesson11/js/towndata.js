@@ -8,8 +8,8 @@ fetch(requestURL)
     const towns = jsonObject['towns'];
 
     const trifecta = towns.filter(town => town.name == 'Preston' || town.name == 'Soda Springs' || town.name == 'Fish Haven');
-    // for (let i = 0; i < prophets.length; i++ ) { 
-    trifecta.forEach(town => {
+   
+    trifecta.forEach((town) => {
       let card = document.createElement('section');
       let h3 = document.createElement('h3');
       let motto = document.createElement('h4');
