@@ -148,6 +148,9 @@ h3 {
     background-color: hsl(195, 69%, 24%);
     padding: 10px;
 }
+article a {
+    color: black;
+}
 
 article {
     display: block;
@@ -301,7 +304,7 @@ h4 {
 
 footer {
     color:hsl(0, 0%, 100%);
-    font-weight: 500;
+    font-weight: bold;
     background-color: hsl(195, 69%, 40%);
     padding: 17px;
     text-align: center;
