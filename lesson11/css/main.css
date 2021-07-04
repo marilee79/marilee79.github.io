@@ -303,6 +303,9 @@ h4 {
     text-transform: uppercase;
 }
 
+.attributions  {
+    text-align: center;
+}
 
 footer {
     color:hsl(0, 0%, 100%);
