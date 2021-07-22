@@ -1,0 +1,68 @@
+{ 
+    "businesses" : [
+        {
+            "name" : "Wal-mart",
+            "phone" : "(435) 682-2802",
+            "address" : "625 W Telegraph St.",
+            "website" : "www.walmart.com",
+            "logo" : "walmartlogo.png"
+        },
+        {
+            "name" : "In-N-Out Burger",
+            "phone" : "1-800-786-1000",
+            "address" : "832 W Telegraph St.",
+            "website" : "www.in-n-out.com",
+            "logo" : "innoutlogo.png"
+        },
+        {
+            "name" : "Little Caesars",
+            "phone" : "(435) 628-9400",
+            "address" : "875 W Red Cliffs Dr.",
+            "website" : "littlecaesars.com",
+            "logo" : "littlecaesarslogo.png"
+        },
+        {
+            "name" : "The Home Depot",
+            "phone" : "(435) 634-7312",
+            "address" : "725 W Telegraph St.",
+            "website" : "www.homedepot.com",
+            "logo" : "homedepotlogo.png"
+        },
+        {
+            "name" : "Sherwin-Williams",
+            "phone" : "(435) 652-9610",
+            "address" : "1006 W Red Cliffs Dr.",
+            "website" : "www.sherwin-williams.com",
+            "logo" : "sherwinwilliamslogo.png"
+        },
+        {
+            "name" : "Kohl's",
+            "phone" : "(435) 251-8631",
+            "address" : "650 W Telegraph St",
+            "website" : "m.kohls.com",
+            "logo" : "kohlslogo.png"
+        },
+        {
+            "name" : "Jo-Ann Fabrics and Crafts",
+            "phone" : "(435) 627-9082",
+            "address" : "720 W Telegraph St",
+            "website" : "www.joann.com",
+            "logo" : "joannslogo.png"
+        },
+        {
+            "name" : "Desert Homes Pest Control LLC.",
+            "phone" : "(435) 256-0407",
+            "address" : "137 W 1725 S St",
+            "website" : "www.stgpest.com",
+            "logo" : "deserthomeslogo.jpg"
+        },
+        {
+            "name" : "Passport Wholesale Furnishings",
+            "phone" : "(435) 628-2900",
+            "address" : "400 W Telegraph St",
+            "website" : "passportfurnishings.com",
+            "logo" : "passportlogo.jpg"
+        }
+
+    ]
+}

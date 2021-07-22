@@ -18,11 +18,5 @@ fetch(forecastURL)
             document.getElementById(`forecast${day+1}`).textContent = x.main.temp;
             day++        
         });
-        // const desc = jsObject.weather[0].icon;
-        // const image = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
-        
-        // document.getElementById(`icon`).setAttribute('src', image);
-        // document.getElementById(`icon`).setAttribute('alt', desc);
-
         
     });

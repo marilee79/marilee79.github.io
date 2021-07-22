@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Washington Chamber of Commerce</title>
+        <meta name="description"
+            content="Fictitious Chamber of Commerce for Washington City, Utah">
+            <link rel="shortcut icon" href="favicon.ico">
+            <link rel="stylesheet" href="../css/normalize.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="css/main.css"/>
+            <link rel="stylesheet" href="css/medium.css"/>
+            <link rel="stylesheet" href="css/large.css"/>
+            <script defer src="js/index.js"></script>
+    </head>
+    <body>
+        
+        <header>
+            <picture>
+                <img src="images/7727581-64 (1).png" alt="washington chamber of commerce logo">
+            </picture>
+            <section class="logo">
+                <h1>Washington</h1>
+                <p>Chamber of Commerce</p>
+            </section>
+            <nav>
+                <ul class="navigation">
+                    <li><a class="ham" href="#">&#9776;Menu</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="washington-city.html">Washington</a></li>
+                    <li><a class="active"href="membership.html">Membership</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            
+            <h2>Join the Chamber</h2>
+            <form method="get" action="membership-confirmation.html" class="member">
+                <fieldset class="memberInfo">
+                    <legend>Business Information</legend>
+                    <label>Business Name* <input type="text" name="coname" placeholder="Company Name" pattern="[a-zA-Z ]{5,}" required></label>
+                    <label>Business Phone Number <input type="tel" name="phone" placeholder="000-000-0000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></label>
+                    <label>Business Website <input type="url" maxlength="60" name="website" placeholder="https://example.com" pattern="https://.*"></label>
+                    <label>Business Email* <input type="email" name="email" placeholder="info@example.com" required></label>
+                    <label>Business Address <input type="text" name="street" placeholder="Street Address">
+                                    <input type="address" name="city" placeholder="City"></label>
+                    <label>Zip Code <input type="number" name="zip"></label> <br>               
+                    <label>Business Description <textarea name="description" cols="20" rows="5" placeholder="What is your business?"></textarea></label>
+                </fieldset>
+
+                <fieldset class="contactInfo">
+                    <legend>Primary Contact</legend>
+                    <label>First Name <input type="text" name="fname" placeholder="Joe" pattern="[a-zA-Z ]{5,}" required></label>
+                    <label>Last Name <input type="text" name="lname" placeholder="Smith" pattern="[a-zA-Z ]{5,}" required></label>
+                    <label>Title <input type="text" name="title" placeholder="Project Manager"></label>
+                    <label>Cell Phone <input type="tel" name="cell" placeholder="801-111-2222" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></label>
+                </fieldset>
+
+                <fieldset class="membershipLevel">
+                    <legend>Membership Level</legend>
+                    <h3>Basic Benefits</h3>
+                    <ul>
+                        <li>Chamber Launch orientations to explore benefits and meet other members</li>
+                        <li>Opportunity to post your company’s announcements in Member News on the Chamber website and social media platforms</li>
+                        <li>Chamber referrals to your business/organization</li>
+
+                    </ul>
+                    <h3>Non-profit $100</h3>
+                    <ul>
+                        <li>All of the Basic Benefits</li>
+                        <li>One registration to Chamber Launch</li>
+                        <li>Two registrations to one Business After Hours event</li>
+                    </ul>
+                    <h3>Bronze $200</h3>
+                    <ul>
+                        <li>All of the same benefits as Non-profit plus:</li>
+                        <li>Four registrations to each Business After Hours event</li>
+                        <li>Four registrations to Annual Legislative Reception</li>
+                        <li>Two registrations to Chamber Launch</li>
+                        <li>Invite to participate in Chamber committees</li>
+                        <li>Member spotlight (featured on social media platforms)</li>
+                    </ul>
+                    <h3>Silver $400</h3>
+                    <ul>
+                        <li>All of the same benefits as Bronze plus:</li>
+                        <li>Invitation to register for Annual Washington, D.C. Trip</li>
+                        <li>Company advertisement on Chamber podcast (based on availability)</li>
+                        <li>Two registrations to each Policy Forum (i.e. Cybersecurity, Workforce, Water Education, Infrastructure)</li>
+                    </ul>
+                    <h3>Gold $1000</h3>
+                    <ul>
+                        <li>All of the same benefits as Silver plus:</li>
+                        <li>Legislative alerts during the legislative session</li>
+                        <li>Annual consultation with a senior staff member to develop a customized member engagement plan</li>
+                        <li>Chamber Business Directory (two mailing list requests/year)*Does not include emails</li>
+                    </ul>
+                    <label><input type="radio" name="memberlevel" value="non-profit">Non-profit = $100</label>
+                    <label><input type="radio" name="memberlevel" value="bronze">Bronze = $200</label>
+                    <label><input type="radio" name="memberlevel" value="silver">Silver = $400</label>
+                    <label><input type="radio" name="memberlevel" value="non-profit">Gold = $1000</label>
+                    
+                </fieldset>
+
+                    <input class="submit" type="submit" value="Join the Chamber">
+            </form>
+
+        
+        </main>
+        <footer>
+            &copy; <span id="theyear"></span>| <a href="attributions.html">Attributions</a> | Marilee Belnap <br>
+            <date></date> <br>
+            <a href="https://www.facebook.com" target="_blank"><img src="images/facebook-red-16.png" alt="facebook logo"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="images/instagram-red-16.png" alt="instagram logo"></a>
+            <a href="https://www.youtube.com" target="_blank"><img src="images/youtube-red-16.png" alt="youtube logo"></a>
+            
+        </footer>
+    </body>
+
+</html>
